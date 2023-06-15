@@ -76,7 +76,7 @@ body {
 }
 
 .score{
-    width: 580px;
+    width: 500px;
     display: flex;
     justify-content: space-evenly;
 }
