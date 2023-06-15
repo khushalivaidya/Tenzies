@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    padding: 30px 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+.main-box{
+    background-color: #F5F5F5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 98%; 
+    width: 68%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 60px;
+    margin: 20px;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template: auto auto / repeat(5, 1fr);
+    margin-bottom: 20px;
+}
+
+.die{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+ 
+.roll-btn{
+    margin-top: 45px;
+    background-color: #5035FF;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    font-size: 20px;
+    border-radius: 3px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.roll-btn:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.score{
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score p{
+    background-color: rgb(223, 233, 93);
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.btn{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
