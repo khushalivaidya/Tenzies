@@ -11,22 +11,23 @@ body {
 
 .main-box{
     background-color: #F5F5F5;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 550px; 
+    height: 450px;
     max-width: 800px;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
 
 .title {
-    font-size: 60px;
-    margin: 20px;
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 .instructions {
@@ -34,41 +35,42 @@ body {
     font-weight: 400;
     margin-top: 0;
     text-align: center;
-    margin-bottom: 35px;
 }
 
 .grid-container{
     display: grid;
-    gap: 20px;
     grid-template: auto auto / repeat(5, 1fr);
-    margin-bottom: 20px;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .die{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-    border-radius: 3.81277px;
+    border-radius: 10px;
     height: 50px;
     width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: white;
     font-size: 2rem;
     font-weight: bold;
 }
  
 .roll-btn{
-    margin-top: 45px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
     background-color: #5035FF;
     color: white;
-    border: none;
-    padding: 8px 25px;
-    font-size: 20px;
-    border-radius: 3px;
-    font-family: 'Karla', sans-serif;
-    font-weight: bold;
+    font-size: 1.2rem;
     cursor: pointer;
+}
+
+.roll-btn:focus {
+    outline: none;
 }
 
 .roll-btn:active{
@@ -76,9 +78,8 @@ body {
 }
 
 .score{
-    width: 500px;
     display: flex;
-    justify-content: space-evenly;
+    gap: 50px;
 }
 
 .score p{
@@ -88,7 +89,6 @@ body {
 }
 
 .btn{
-    width: 500px;
     display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
 }
